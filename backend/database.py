@@ -12,10 +12,11 @@ except ImportError:
 
 
 DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASSWORD", "root"),
-    "database": os.getenv("DB_NAME", "olympics_db"),
+    "host": os.getenv("DB_HOST"),
+    "port": int(os.getenv("DB_PORT", "3306")),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME"),
     "connection_timeout": int(os.getenv("DB_CONNECTION_TIMEOUT", "10")),
 }
 
