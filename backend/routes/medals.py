@@ -1,7 +1,6 @@
 from flask import Blueprint, request
 
-from database import fetch_all
-
+from backend.database import fetch_all
 medals_bp = Blueprint("medals", __name__)
 
 

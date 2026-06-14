@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 
-from database import fetch_all
-from services.ai_service import generate_olympic_insight
+from backend.database import fetch_all
+from backend.services.ai_service import generate_olympic_insight
 
 ai_bp = Blueprint("ai", __name__)
 

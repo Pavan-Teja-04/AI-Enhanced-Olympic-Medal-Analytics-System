@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 
-from database import fetch_all
-from predict import predict_medal
+from backend.database import fetch_all
+from backend.predict import predict_medal
 
 analytics_bp = Blueprint("analytics", __name__)
 

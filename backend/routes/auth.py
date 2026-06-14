@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from database import execute, fetch_one
+from backend.database import execute, fetch_one
 
 auth_bp = Blueprint("auth", __name__)
 

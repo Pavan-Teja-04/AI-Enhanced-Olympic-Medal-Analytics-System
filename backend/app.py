@@ -3,10 +3,10 @@ from pathlib import Path
 from flask import Flask, send_from_directory
 from flask_cors import CORS
 
-from routes.ai import ai_bp
-from routes.analytics import analytics_bp
-from routes.auth import auth_bp
-from routes.medals import medals_bp
+from backend.routes.ai import ai_bp
+from backend.routes.analytics import analytics_bp
+from backend.routes.auth import auth_bp
+from backend.routes.medals import medals_bp
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
