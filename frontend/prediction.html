@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction - Olympic Medal Analytics</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="rings"><span></span><span></span><span></span></span>Olympic Medal Analytics</a><nav class="nav"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="standings.html">Standings</a><a href="analytics.html">Analytics</a><a href="prediction.html">Prediction</a><a href="ai-insights.html">AI Insights</a><button class="btn" data-theme-toggle>Theme</button></nav></header>
+    <main class="page">
+        <section class="section-head"><div><h1>Medal Prediction</h1><p class="muted">Random Forest prediction with medal probability output.</p></div></section>
+        <section class="grid two">
+            <form id="predictionForm" class="panel grid">
+                <label>Country<input name="country" placeholder="China" required></label>
+                <label>Sport<input name="sport" placeholder="Judo" required></label>
+                <label>Year<input name="year" type="number" value="2028" required></label>
+                <label>Athletes<input name="athletes_count" type="number" value="1" min="1"></label>
+                <button class="btn primary" type="submit">Predict Medal</button>
+                <p id="predictionMessage" class="hidden"></p>
+            </form>
+            <section class="panel">
+                <h2>Prediction Output</h2>
+                <div id="predictionResult" class="insight-box muted">Submit inputs to view predicted medal and confidence.</div>
+                <ul id="probabilityList"></ul>
+            </section>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

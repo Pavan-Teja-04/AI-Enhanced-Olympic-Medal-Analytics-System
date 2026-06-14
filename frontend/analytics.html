@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Olympic Medal Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="analytics">
+    <header class="topbar"><a class="brand" href="index.html"><span class="rings"><span></span><span></span><span></span></span>Olympic Medal Analytics</a><nav class="nav"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="standings.html">Standings</a><a href="analytics.html">Analytics</a><a href="prediction.html">Prediction</a><a href="ai-insights.html">AI Insights</a><button class="btn" data-theme-toggle>Theme</button></nav></header>
+    <main class="page">
+        <section class="section-head"><div><h1>Historical Analysis</h1><p class="muted">Compare year-wise and sport-wise Olympic performance.</p></div><button class="btn primary" onclick="window.print()">Export Report</button></section>
+        <p id="pageStatus" class="hidden"></p>
+        <section class="grid stats">
+            <article class="card"><h3>Total Medals</h3><div id="totalMedals" class="stat-value">0</div></article>
+            <article class="card"><h3>Countries</h3><div id="totalCountries" class="stat-value">0</div></article>
+            <article class="card"><h3>Sports</h3><div id="totalSports" class="stat-value">0</div></article>
+            <article class="card"><h3>First Year</h3><div id="firstYear" class="stat-value">0</div></article>
+            <article class="card"><h3>Latest Year</h3><div id="latestYear" class="stat-value">0</div></article>
+        </section>
+        <section class="grid two" style="margin-top: 18px;"><article class="panel"><h2>Country Leaders</h2><canvas id="countryChart"></canvas></article><article class="panel"><h2>Sport Breakdown</h2><canvas id="sportChart"></canvas></article></section>
+        <section class="panel" style="margin-top: 18px;"><h2>Medal Trend</h2><canvas id="trendChart"></canvas></section>
+        <section class="panel" style="margin-top: 18px;">
+            <h2>Trend Report</h2>
+            <form id="trendForm" class="toolbar" style="grid-template-columns: 1fr auto;">
+                <label>Country<input name="country" placeholder="United States"></label>
+                <button class="btn primary" type="submit">Generate</button>
+            </form>
+            <p id="trendReport" class="insight-box muted">Generate a country trend report to display historical comparison insights.</p>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

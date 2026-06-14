@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Standings - Olympic Medal Analytics</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="standings">
+    <header class="topbar"><a class="brand" href="index.html"><span class="rings"><span></span><span></span><span></span></span>Olympic Medal Analytics</a><nav class="nav"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="standings.html">Standings</a><a href="analytics.html">Analytics</a><a href="prediction.html">Prediction</a><a href="ai-insights.html">AI Insights</a><button class="btn" data-theme-toggle>Theme</button></nav></header>
+    <main class="page">
+        <section class="section-head"><div><h1>Medal Standings</h1><p class="muted">Search and filter historical Olympic medal records.</p></div><button class="btn primary" onclick="window.print()">Export Table</button></section>
+        <p id="pageStatus" class="hidden"></p>
+        <form id="filterForm" class="toolbar">
+            <label>Country<input name="country" placeholder="India"></label>
+            <label>Sport<input name="sport" placeholder="Hockey"></label>
+            <label>Year<input name="year" type="number" placeholder="2016"></label>
+            <label>Rows<input name="limit" type="number" value="100" min="10" max="500"></label>
+            <button class="btn primary" type="submit">Filter</button>
+        </form>
+        <section class="panel">
+            <table>
+                <thead><tr><th>Year</th><th>Country</th><th>Sport</th><th>Event</th><th>Medal</th></tr></thead>
+                <tbody id="medalsBody"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

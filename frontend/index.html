@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Medal Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="home">
+    <header class="topbar">
+        <a class="brand" href="index.html">
+            <span class="rings"><span></span><span></span><span></span></span>
+            Olympic Medal Analytics
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="standings.html">Standings</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="prediction.html">Prediction</a>
+            <a href="ai-insights.html">AI Insights</a>
+            <a href="login.html">Login</a>
+            <button class="btn" data-theme-toggle>Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-hero">
+            <div class="home-hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">AI-Enhanced Olympic Medal Analytics System</p>
+                    <h1>Olympic Medal Analytics</h1>
+                    <p>
+                        Explore country dominance, sport-wise medal patterns, historical trends,
+                        machine learning predictions, and AI-generated performance reports from
+                        Olympic history.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="dashboard.html">Open Dashboard</a>
+                        <a class="btn hero-secondary" href="prediction.html">Try Prediction</a>
+                    </div>
+                </div>
+                <div class="hero-metrics" aria-label="Project highlights">
+                    <article>
+                        <span>271K+</span>
+                        <p>Athlete event records</p>
+                    </article>
+                    <article>
+                        <span>120+</span>
+                        <p>Years of Olympic history</p>
+                    </article>
+                    <article>
+                        <span>4</span>
+                        <p>Insight modules</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page home-section home-overview">
+            <div class="section-head">
+                <div>
+                    <h2>From raw records to decisions</h2>
+                    <p class="muted">A complete analytics flow for exploring Olympic performance.</p>
+                </div>
+            </div>
+
+            <div class="grid feature-grid">
+                <article class="card feature-card">
+                    <span class="feature-kicker">01</span>
+                    <h3>Medal Intelligence</h3>
+                    <p>View country standings, sport distribution, medal totals, and historical Olympic records with search filters.</p>
+                </article>
+                <article class="card feature-card">
+                    <span class="feature-kicker">02</span>
+                    <h3>Trend Analytics</h3>
+                    <p>Study year-wise medal movement, top-performing countries, and sport dominance using Chart.js dashboards.</p>
+                </article>
+                <article class="card feature-card">
+                    <span class="feature-kicker">03</span>
+                    <h3>Machine Learning</h3>
+                    <p>Use a Random Forest model to predict medal category and probability for country, sport, and year inputs.</p>
+                </article>
+                <article class="card feature-card">
+                    <span class="feature-kicker">04</span>
+                    <h3>AI Insights</h3>
+                    <p>Generate country performance summaries, trend reports, and future outlooks from medal history.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="page home-section">
+            <div class="grid two home-split">
+                <article class="panel workflow-panel">
+                    <h2>Analysis Workflow</h2>
+                    <div class="timeline">
+                        <div>
+                            <span>Import</span>
+                            <p>Load medal-winning Olympic records into MySQL.</p>
+                        </div>
+                        <div>
+                            <span>Explore</span>
+                            <p>Filter by country, sport, year, and medal category.</p>
+                        </div>
+                        <div>
+                            <span>Predict</span>
+                            <p>Estimate medal outcomes with saved Random Forest artifacts.</p>
+                        </div>
+                        <div>
+                            <span>Explain</span>
+                            <p>Turn medal statistics into readable country performance reports.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="panel highlight-panel">
+                    <p class="eyebrow">Ready for evaluation</p>
+                    <h2>Built as a full project, not just charts</h2>
+                    <p>
+                        The system includes registration, dashboards, medal search, predictive
+                        modeling, optional Gemini reports, browser print exports, and a clear
+                        setup path for database-backed demos.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="standings.html">View Medal Records</a>
+                        <a class="btn" href="ai-insights.html">Generate AI Report</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

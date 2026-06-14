@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Olympic Medal Analytics</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <section class="panel auth-panel">
+            <a class="brand" href="index.html"><span class="rings"><span></span><span></span><span></span></span>Olympic Medal Analytics</a>
+            <div class="auth-tabs">
+                <button id="loginTab" class="btn primary">Login</button>
+                <button id="registerTab" class="btn">Register</button>
+            </div>
+            <form id="loginForm" class="grid">
+                <label>Email<input name="email" type="email" required></label>
+                <label>Password<input name="password" type="password" required></label>
+                <button class="btn primary" type="submit">Login</button>
+            </form>
+            <form id="registerForm" class="grid hidden">
+                <label>Name<input name="name" required></label>
+                <label>Email<input name="email" type="email" required></label>
+                <label>Password<input name="password" type="password" required minlength="6"></label>
+                <button class="btn primary" type="submit">Create Account</button>
+            </form>
+            <p id="authMessage" class="hidden"></p>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
